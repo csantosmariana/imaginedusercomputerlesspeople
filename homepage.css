@@ -1,0 +1,116 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: helvetica;
+    font-size: 1vw;
+}
+
+/*class*/
+
+.chapter {
+    text-decoration: underline;
+}
+
+.link1, .link2, .link3, .link4, .link5, .link6 {
+    width: 25%;
+    height: auto;
+    text-decoration: none;
+    color: black;
+}
+
+
+.link1:hover, .link1:active, 
+.link2:hover, .link2:active, 
+.link3:hover, .link3:active, 
+.link4:hover, .link4:active, 
+.link5:hover, .link5:active, 
+.link6:hover, .link6:active {
+    text-decoration: underline;
+    color: black;
+}
+
+.link1:visited, .link2:visited, .link3:visited, .link4:visited, .link5:visited, .link6:visited {
+    color: black;
+}
+
+/*BUTTONS*/
+
+.about {
+    width: auto;
+    height: 100%;
+    font-size: 3vw;
+    margin-left: 20%;
+    text-decoration: none;
+    color: black;
+}
+
+.references {
+    width: auto;
+    height: 100%;
+    font-size: 3vw;
+    text-decoration: none;
+    color: black;
+    margin-left: 15%;
+}
+
+.about:hover, .references:hover, .about:active, .references:active {
+    text-decoration: underline;
+    color: black;
+}
+
+.about:visited, .references:visited {
+    color: black;
+}
+
+/*HEADER*/
+
+#header {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+/*CONTENT*/
+
+#content {
+    width: 15%;;
+    height: auto;
+    margin-left: 20.5%;
+    margin-top: 10%;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+/*FOOTER*/
+
+#footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    font-family: helvetica;
+    font-size: 3vw;
+}
+
+#keywords1 {
+    width: auto;
+    height: 100%;
+    margin-left: 20%;
+}
+
+#keywords2 {
+    width: auto;
+    height: 100%;
+    margin-left: 14.75%;
+}
+
+#image1, #image2, #image3, #image4, #image5, #image6 {
+    position: absolute;
+    width: 20%;
+    display: none;
+    pointer-events: none;
+    z-index: 0;
+    
+}

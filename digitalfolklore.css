@@ -1,0 +1,235 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1vw;
+}
+
+/*CLASSES*/
+
+.categories {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    text-decoration: underline;
+}
+
+.year, .format {
+/*    background-color: yellow;*/
+    width: 10%;
+}
+
+.year {
+    margin-left: 5%;
+}
+
+.artist {
+    width: 18%;
+    margin-left: 18%;
+}
+
+.art {
+    width: 25%;
+    text-decoration: underline;
+    margin-left: 
+}
+
+/*
+.title {
+    width: auto;
+    height: 100%;
+    font-size: 3vw;
+    margin-left: 20%;
+    text-decoration: none;
+    color: black;
+}
+
+.subtitle {
+    width: auto;
+    height: 100%;
+    font-size: 3vw;
+    text-decoration: none;
+    color: black;
+    margin-left: 15%;
+}
+*/
+
+.underline {
+    text-decoration: underline;
+}
+
+.images, .text {
+    width: 30%;
+    height: auto;
+}
+
+.text {
+    margin-bottom: 5%;
+}
+
+/*BUTTONS*/
+
+.about, .references, .back {
+    width: auto;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.back {
+    margin-left: 3%;
+}
+
+.back:hover {
+    text-decoration: underline;
+}
+
+.about {
+    width: auto;
+    height: auto;
+    margin-left: 15.25%;
+}
+
+.references {
+    margin-left: 15%;
+}
+
+.about:hover, .references:hover, .about:active, .references:active {
+    text-decoration: underline;
+    color: black;
+}
+
+.about:visited, .references:visited {
+    color: black;
+}
+
+.format, .format_i {
+    color: black;
+}
+
+.format:hover {
+    color: red;
+}
+
+/*HEADER*/
+
+#header {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    font-family: helvetica;
+    font-size: 3vw;
+}
+
+/*CONTENT*/
+
+#content {
+/*    background-color: purple;*/
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+}
+
+/* wrapper, word, text*/
+
+.titles {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+/* conteúdo */
+
+.project {
+    display: inline-block;
+    width: 25%;
+    height: auto;
+    text-decoration: none;
+    color: black;
+}
+
+.project:hover {
+    text-decoration: underline;
+}
+
+.project.hidden {
+  display: none;
+}
+
+.hiddendiv, .hiddendiv2, hiddendiv3, hiddendiv4 {
+  height: 0;
+/*  background-color: green;*/
+  overflow: hidden;
+  transition: height 0.5s;
+  display: flex;
+  flex-direction: column;
+}
+
+#showdiv1:target ~ div a[href="#showdiv1"],
+#showdiv2:target ~ div a[href="#showdiv2"],
+#showdiv3:target ~ div a[href="#showdiv3"],
+#showdiv4:target ~ div a[href="#showdiv4"]{
+  display: none;
+}
+
+#showdiv1:target ~ div a[href="#hidediv1"],
+#showdiv2:target ~ div a[href="#hidediv2"],
+#showdiv3:target ~ div a[href="#hidediv3"],
+#showdiv4:target ~ div a[href="#hidediv4"]{
+  display: inline-block;
+}
+
+#showdiv1:target ~ div .hiddendiv.nr1,
+#showdiv2:target ~ div .hiddendiv.nr2,
+#showdiv3:target ~ div .hiddendiv.nr3,
+#showdiv4:target ~ div .hiddendiv.nr4{
+  height: auto;
+}
+
+/*COLUMNS*/
+
+#column1, #column2 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#column1 {
+    width: 17.5%;
+    margin-left: 3%;
+}
+
+#column2 {
+    width: 80%;
+}
+
+/*FOOTER*/
+
+#footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    font-family: helvetica;
+    font-size: 3vw;
+}
+
+#keywords1 {
+    width: auto;
+    height: 100%;
+    margin-left: 20%;
+}
+
+#keywords2 {
+    width: auto;
+    height: 100%;
+    margin-left: 11%;
+}
+

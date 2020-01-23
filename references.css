@@ -1,0 +1,124 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1vw;
+}
+
+
+/*CLASSES*/
+
+.underline {
+    text-decoration: underline;
+}
+
+/*BUTTONS*/
+
+.about, .references, .back {
+    width: auto;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.back {
+    margin-left: 3%;
+}
+
+.back:hover {
+    text-decoration: underline;
+}
+
+.about {
+    width: auto;
+    height: auto;
+    margin-left: 15.25%;
+}
+
+.references {
+    margin-left: 15%;
+}
+
+.about:hover, .about:active {
+    text-decoration: underline;
+    color: black;
+}
+
+.about:visited {
+    color: black;
+}
+
+
+/*HEADER*/
+
+#header {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    font-family: helvetica;
+    font-size: 3vw;
+}
+
+/*CONTENT*/
+
+#content {
+/*    background-color: purple;*/
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+/*COLUMNS*/
+
+#column1, #column2, #column3, #column4 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#column1 {
+    width: 17.5%;
+    margin-left: 3%;
+}
+
+#column2 {
+    width: 10%;
+}
+
+#column3 {
+    width: 13%;
+    margin-right: 3%;
+}
+
+#column4 {
+    width: 50%;
+}
+
+/*FOOTER*/
+
+#footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    font-family: helvetica;
+    font-size: 3vw;
+}
+
+#keywords1 {
+    width: auto;
+    height: 100%;
+    margin-left: 20%;
+}
+
+#keywords2 {
+    width: auto;
+    height: 100%;
+    margin-left: 14.75%;
+}
